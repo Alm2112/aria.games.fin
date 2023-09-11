@@ -124,18 +124,31 @@ header, section, footer, aside, article, figure {
     -o-animation: automatizacion 15s infinite linear;
     -webkit-animation: automatizacion 15s infinite linear;
     animation: automatizacion 15s infinite linear;
-    -webkit-transition: all 0.75s ease;
-    -moz-transition: all 0.75s ease;
-    -ms-transition: all 0.75s ease;
-    -o-transition: all 0.75s ease;
-    transition: all 0.75s ease;
+    -webkit-transition: all 4s ease;
+    -moz-transition: all 4s ease;
+    -ms-transition: all 4s ease;
+    -o-transition: all 4s ease;
+    transition: all 4.00s ease;
     height: 500px;
-    width: 300%;
+    width: 400%;
+}
+#carrusel-caja {
+    -moz-animation: automatizacion 15s infinite linear;
+    -o-animation: automatizacion 15s infinite linear;
+    -webkit-animation: automatizacion 15s infinite linear;
+    animation: automatizacion 15s infinite linear;
+    -webkit-transition: all 4s ease;
+    -moz-transition: all 4s ease;
+    -ms-transition: all 4s ease;
+    -o-transition: all 4s ease;
+    transition: all 4.00s ease;
+    height: 500px;
+    width: 400%;
 }
 #carrusel-contenido {
     margin: 0 auto;
     overflow: hidden;
-    text-align: left;
+    text-align: center;
 }
 .imagenes{
     height: 500px;
@@ -143,75 +156,102 @@ header, section, footer, aside, article, figure {
 }
 .carrusel-elemento {
     float: left;
-    width: 33.333%;
+    width: 25%;
 }
 @-moz-keyframes automatizacion {
     0% {
         margin-left: 0;
     }
-    30% {
+    5% {
         margin-left: 0;
+    }
+    15% {
+        margin-left: 0%;
+    }
+    20% {
+        margin-left: -100%; /* Cambiamos el porcentaje a 75% */
+    }
+    25% {
+        margin-left: -100%; /* Cambiamos el porcentaje a 75% */
     }
     35% {
-        margin-left: -100%;
+        margin-left: -200%; /* Cambiamos el porcentaje a 75% */
     }
-    65% {
-        margin-left: -100%;
+    40% {
+        margin-left: -200%; /* Cambiamos el porcentaje a 75% */
     }
-    70% {
-        margin-left: -200%;
+    45% {
+        margin-left: -300%; /* Cambiamos el porcentaje a 75% */
     }
-    95% {
-        margin-left: -200%;
+    98% {
+        margin-left: -300%;
     }
     100% {
-        margin-left: 0;
+        margin-left: -0%;
     }
 }
 @-webkit-keyframes automatizacion {
     0% {
         margin-left: 0;
     }
-    30% {
+    5% {
         margin-left: 0;
+    }
+    15% {
+        margin-left: 0%;
+    }
+    20% {
+        margin-left: -100%; /* Cambiamos el porcentaje a 75% */
+    }
+    25% {
+        margin-left: -100%; /* Cambiamos el porcentaje a 75% */
     }
     35% {
-        margin-left: -100%;
+        margin-left: -200%; /* Cambiamos el porcentaje a 75% */
     }
-    65% {
-        margin-left: -100%;
+    40% {
+        margin-left: -200%; /* Cambiamos el porcentaje a 75% */
     }
-    70% {
-        margin-left: -200%;
+    45% {
+        margin-left: -300%; /* Cambiamos el porcentaje a 75% */
     }
-    95% {
-        margin-left: -200%;
+    98% {
+        margin-left: -300%;
     }
     100% {
-        margin-left: 0;
+        margin-left: -0%;
     }
 }
 @keyframes automatizacion {
     0% {
         margin-left: 0;
     }
-    30% {
+    5% {
         margin-left: 0;
+    }
+    15% {
+        margin-left: 0%;
+    }
+    20% {
+        margin-left: -100%; /* Cambiamos el porcentaje a 75% */
+    }
+    25% {
+        margin-left: -100%; /* Cambiamos el porcentaje a 75% */
     }
     35% {
-        margin-left: -100%;
+        margin-left: -200%; /* Cambiamos el porcentaje a 75% */
     }
-    65% {
-        margin-left: -100%;
+    40% {
+        margin-left: -200%; /* Cambiamos el porcentaje a 75% */
     }
-    70% {
-        margin-left: -200%;
+    45% {
+        margin-left: -300%; /* Cambiamos el porcentaje a 75% */
     }
-    95% {
-        margin-left: -200%;
+    98% {
+        margin-left: -300%;
     }
     100% {
-        margin-left: 0;
+        margin-left: -0%;
     }
 }
 -->
@@ -250,6 +290,9 @@ header, section, footer, aside, article, figure {
 				</div>
 				<div class="carrusel-elemento">
 					<img class="imagenes" src="Imagen1.jpg">
+				</div>
+                <div class="carrusel-elemento">
+					<iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F100063567642096%2Fvideos%2F305267021869037%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 				</div>
 			</div>
 		</div>
