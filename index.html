@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>ARIA GAMES CATALOGO</title>
+<title>Aria Games</title>
 <style type="text/css">
 <!--
 body {
@@ -40,7 +40,7 @@ a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usu
 /* ~~ Este contenedor de anchura fija rodea a todas las demás bloques ~~ */
 .container {
 	width: 960px;
-	background-color: #A3E4D7;
+	background-color: #3348ff;
 	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño  */
 }
 /* ~~ No se asigna una anchura al encabezado. Se extenderá por toda la anchura del diseño. ~~ */
@@ -65,21 +65,6 @@ aside {
 	background-color: #EADCAE;
 	padding: 10px 0;
 }
-button {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #ffac86;
-        color: #ffffff;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-        border: 2px solid #940d0d;
-}
-
-button:hover {
-        background-color: #2980b9;
-        border-color: #3498db;
-        }
 
 .content ul, .content ol {
 	padding: 0 15px 15px 40px; /* este relleno reproduce en espejo el relleno derecho de la regla de encabezados y de párrafo incluida más arriba. El relleno se ha colocado en la parte inferior para que el espacio existente entre otros elementos de la lista y a la izquierda cree la sangría. Estos pueden ajustarse como se desee. */
@@ -134,12 +119,148 @@ footer {
 header, section, footer, aside, article, figure {
 	display: block;
 }
+#carrusel-caja {
+    -moz-animation: automatizacion 15s infinite linear;
+    -o-animation: automatizacion 15s infinite linear;
+    -webkit-animation: automatizacion 15s infinite linear;
+    animation: automatizacion 15s infinite linear;
+    -webkit-transition: all 4s ease;
+    -moz-transition: all 4s ease;
+    -ms-transition: all 4s ease;
+    -o-transition: all 4s ease;
+    transition: all 4.00s ease;
+    height: 500px;
+    width: 400%;
+}
+#carrusel-caja {
+    -moz-animation: automatizacion 15s infinite linear;
+    -o-animation: automatizacion 15s infinite linear;
+    -webkit-animation: automatizacion 15s infinite linear;
+    animation: automatizacion 15s infinite linear;
+    -webkit-transition: all 4s ease;
+    -moz-transition: all 4s ease;
+    -ms-transition: all 4s ease;
+    -o-transition: all 4s ease;
+    transition: all 4.00s ease;
+    height: 500px;
+    width: 400%;
+}
+#carrusel-contenido {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+.imagenes{
+    height: 500px;
+    width: 100%;
+}
+.carrusel-elemento {
+    float: left;
+    width: 25%;
+}
+@-moz-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    5% {
+        margin-left: 0;
+    }
+    15% {
+        margin-left: 0%;
+    }
+    20% {
+        margin-left: -100%; /* Cambiamos el porcentaje a 75% */
+    }
+    25% {
+        margin-left: -100%; /* Cambiamos el porcentaje a 75% */
+    }
+    35% {
+        margin-left: -200%; /* Cambiamos el porcentaje a 75% */
+    }
+    40% {
+        margin-left: -200%; /* Cambiamos el porcentaje a 75% */
+    }
+    45% {
+        margin-left: -300%; /* Cambiamos el porcentaje a 75% */
+    }
+    98% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -0%;
+    }
+}
+@-webkit-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    5% {
+        margin-left: 0;
+    }
+    15% {
+        margin-left: 0%;
+    }
+    20% {
+        margin-left: -100%; /* Cambiamos el porcentaje a 75% */
+    }
+    25% {
+        margin-left: -100%; /* Cambiamos el porcentaje a 75% */
+    }
+    35% {
+        margin-left: -200%; /* Cambiamos el porcentaje a 75% */
+    }
+    40% {
+        margin-left: -200%; /* Cambiamos el porcentaje a 75% */
+    }
+    45% {
+        margin-left: -300%; /* Cambiamos el porcentaje a 75% */
+    }
+    98% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -0%;
+    }
+}
+@keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    5% {
+        margin-left: 0;
+    }
+    15% {
+        margin-left: 0%;
+    }
+    20% {
+        margin-left: -100%; /* Cambiamos el porcentaje a 75% */
+    }
+    25% {
+        margin-left: -100%; /* Cambiamos el porcentaje a 75% */
+    }
+    35% {
+        margin-left: -200%; /* Cambiamos el porcentaje a 75% */
+    }
+    40% {
+        margin-left: -200%; /* Cambiamos el porcentaje a 75% */
+    }
+    45% {
+        margin-left: -300%; /* Cambiamos el porcentaje a 75% */
+    }
+    98% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -0%;
+    }
+}
 -->
 </style><!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]--></head>
 
 <body>
+
 <div class="container">
   <header>
     <a href="index.html"><img src="LOGO_ARIA-removebg-preview.png" width="248" height="94" ali></a>
@@ -147,90 +268,35 @@ header, section, footer, aside, article, figure {
   <div class="sidebar1">
     <ul class="nav">
         <li><a href="Games.html">NOSOTROS</a></li>
+        <li><a href="Catalogo.html">CATÁLOGO</a></li>
         <li><a href="sucursales.html">SUCURSALES</a></li>
-        <li><a href="index.html">HOME</a></li>
     </ul>
     
   <!-- end .sidebar1 --></div>
 </div>
   <article class="content">
-    <h1><CENTER>CATALOGO</h1>
+    <h1><CENTER>ARIA GAMES</h1>
     <section>
-      <p><CENTER>Aria GAMES cuenta gran variedad de máquinas para renta y venta, podrás encontrar todo lo que buscas y necesitas para tu negocio o evento.</p>
-        <p><CENTER>Aquí podrás observar cuales máquinas te interesan para consultar y cotizar poder medio de WhatsApp.</p>
+      <p><CENTER>Aria GAMES se especializa en brindar entretenimiento y diversión a través de su concepto de centros de entretenimiento social. Ofrecemos una amplia gama de máquinas arcade y videojuegos (simuladores, montables, máquinas de redención), desde los clásicos favoritos hasta las últimas novedades, que permiten a nuestros visitantes sumergirse en emocionantes aventuras virtuales. Además, también proporcionamos los servicios de renta, venta y reparación, lo que nos convierte en un recurso integral para entusiastas y emprendedores del entretenimiento.</p>
     </section>
-    <article class="content">
-        <table>
-            <tr>
-                <th>SIMULADORES
-                    <p><img src="simuladores_tabla.jpg" width="200" height="150"></p></th>
-                <td><center>Juegos que imitan la "experiencia" de manejar vehículos o armas. 
-                    Entre ellos podemos encontrar simuladores de vuelo, de tanques, de Cabezas de playa, etc. 
-                    Además de asientos y mandos parecidos a los que existen en los vehículos reales. 
-                    Esto es con el fin de ofrecer una partida más realista e impactante.</center>
-                        <p><center><button><a href="CAT_SIMULADORES.pdf" target="_blank">CATÁLOGO</button></center></a></p></td>
-                </tr>
-        </table>
-        <table>
-            <tr>
-                <td><center>Los montables "Kiddy Kids" son una línea de productos diseñados específicamente para el 
-                    entretenimiento de niños pequeños, ofrecen una experiencia divertida y emocionante para los 
-                    niños mientras les brindan la oportunidad de disfrutar de un paseo interactivo.</center>
-                    <p><center><button><a href="CAT_MONTABLES.pdf" target="_blank">CATÁLOGO</button></center></a></p></td>
-                <th>MONTABLES
-                    <p><img src="montable_tabla.jpg" width="200" height="160"></p></th>
-                </tr>
-        </table>
-        <table> 
-            <tr>
-                <th>MESAS Y FUTBOLITOS<p><img src="mesas_tabla.jpg" width="175" height="150"></p></th>
-                <td><center>Son juegos de mesa diseñados para proporcionar diversión y 
-                    entretenimiento competitivo.</center>
-                    <p><center><button><a href="CAT_MESAS.pdf" target="_blank">CATÁLOGO</button></center></a></p></td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td><center>Diseñados para otorgar tickets canjeables a los 
-                    jugadores según su desempeño en el juego.</center>
-                    <p><center><button><a href="CAT_REDEMPTION.pdf" target="_blank">CATÁLOGO</button></center></a></p></td>
-                    <th>REDEMPTION<p><img src="redemption_tabla.jpg" width="200" height="150"></p></th>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <th>APUESTAS Y OTROS
-                    <p><img src="apuestas_tabla.jpg" width="220" height="150"></p></th>
-                <td><center>En esta sección encontraras máquinas de azar y que involucran destreza de los jugadores 
-                    para ganar, así mismo encontraras otro tipo de máquinas que trabajamos para 
-                    el entretenimiento</center>
-                    <p><center><button><a href="CAT_APUESTAS.pdf" target="_blank">CATÁLOGO</button></center></a></p></td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td><center>Son máquinas diseñadas para que los jugadores intenten ganar premios recogiendo peluches u 
-                    otros objetos con una garra mecánica, o bien algunas expendedoras son dispositivos automáticos 
-                    que dispensan una variedad de productos. </center>
-                    <p><center><button><a href="CAT_PELUCHERAS.pdf" target="_blank">CATÁLOGO</button></center></a></p></td>
-                <th>EXPENDEDORAS Y PELUCHERAS
-                    <p><img src="pelucheras_tabla.jpg" width="265" height="150"></p></th>
-            </tr>
-        </table>
-        <table>
-            <tr>    
-                <th>VIDEOJUEGOS
-                    <p><img src="videojuegos_tabla.jpg" width="200" height="150"></p></th>   
-                <td><center>Con sus botoneras y controles simples, estos juegos ofrecen una experiencia de juego rápida 
-                    y accesible. Los jugadores se sumergen en mundos virtuales llenos de desafíos y diversión, 
-                    compitiendo para lograr puntuaciones altas y la satisfacción de superar niveles cada vez 
-                    más difíciles. </center>
-                    <p><center><button><a href="CAT_VIDEOJUEGOS.pdf" target="_blank">CATÁLOGO</button></center></a></p></td>
-            </tr>
-        </table>
-    </article>
-    
-  <!-- end .container --></div>
+  <article class="content">
+  <div id="carrusel-contenido">
+			<div id="carrusel-caja">
+				<div class="carrusel-elemento">
+					<img class="imagenes" src="imagen2.jpg" >
+				</div>
+				<div class="carrusel-elemento">
+					<img class="imagenes" src="imagen3.jpg">
+				</div>
+				<div class="carrusel-elemento">
+					<img class="imagenes" src="Imagen1.jpg">
+				</div>
+                <div class="carrusel-elemento">
+					<iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F100063567642096%2Fvideos%2F305267021869037%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+				</div>
+			</div>
+		</div>
+  </article>
   <footer>
   <a href="https://api.whatsapp.com/send/?phone=5554540814&text&type=phone_number&app_absent=0" style="color:#ffffff;">
   	<img src="wa.png" width="80" height="78" alt="WhatsApp">
@@ -249,5 +315,13 @@ header, section, footer, aside, article, figure {
     </address>
   </footer>
   <!-- end .container --></div>
+    <script type="text/javascript">
+        function mostrarVentanaEmergente() {
+            var mensaje = "Hola... Bienvenido a Aria Games, diviértete echándole un vistazo a la página.";
+
+            alert(mensaje);
+        }
+        window.onload = mostrarVentanaEmergente;
+    </script>
 </body>
 </html>
